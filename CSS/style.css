@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+#progressbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  border-radius: 8px;
+  background: #242424;
+  z-index: 1;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1px 5%;
+  background: #fafafa;
+  z-index: 1;
+}
+
+header .logo img {
+  max-width: 220px;
+  cursor: pointer;
+}
+
+header .nav-menu {
+  display: flex;
+}
+
+header .nav-menu li {
+  list-style: none;
+}
+
+header .nav-menu li a {
+  position: relative;
+  color: #242424;
+  font-size: 1.8rem;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-weight: 400;
+  transition: all .42 ease;
+  opacity: .8;
+}
+
+header .nav-menu li a:hover {
+  opacity: 1;
+}
+
+header .nav-icons {
+  display: flex;
+  align-items: center;
+}
+
+header .nav-icons i {
+  margin-right: 20px;
+  color: #242424;
+  font-size: 2rem;
+  transition: all .42 ease;
+}
+
+header .nav-icons i:hover {
+  transform: scale(1.1);
+}
+
+header #menu-icon {
+  font-size: 2rem;
+  color: #242424;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+section {
+  padding: 5% 10%;
+}
+
+.main-home {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-home .main-text {
+  color: #242424;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.main-home .main-text h1 {
+  color: #242424;
+  font-size: 4rem;
+  line-height: 1.1;
+  font-weight: 600;
+  margin: 6px 0 10px;
+}
+
+.main-home .main-text p {
+  color: #242424;
+  font-size: 2.0rem;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.main-home .main-btn {
+  display: inline-block;
+  color: #242424;
+  font-size: 1.6rem;
+  font-weight: 500;
+  border: 2px solid #242424;
+  padding: 12px 25px;
+  transition: all .42s ease;
+  text-decoration: none;
+}
+
+.main-home .main-btn:hover {
+  background: #242424;
+  color: #fafafa;
+}
+
+.floating-image {
+  height: auto;
+  padding: 1% 2%;
+}
+
+.main-home .down-arrow {
+  position: absolute;
+  top: 85%;
+}
+
+.main-home .down-arrow i {
+  font-size: 3.0rem;
+  color: #242424;
+  border: 2px solid #242424;
+  border-radius: 50%;
+  padding: 12px 12px;
+}
+
+.main-home .down-arrow i:hover {
+  background: #242424;
+  color: #fafafa;
+  transition: all .42s ease;
+}
+
+body {
+  height: 100vh;
+}
